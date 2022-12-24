@@ -5,18 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css" />
   <title>Fylo data storage component</title>
 </head>
 
 <body>
+  <div class="container">
+    <main class="card">
+      <section class="navigation">
+        <img src="./assets/logo.svg" alt="Logo" />
+        <nav class="navigation-bar">
+          <button class="nav-item" id="document">
+            <img src="./assets/icon-document.svg" alt="document icon">
+          </button>
+          <button class="nav-item" id="folder">
+            <img src="./assets/icon-folder.svg" alt="folder icon">
+          </button>
+          <button class="nav-item" id="upload">
+            <img src="./assets/icon-upload.svg" alt="upload icon">
+          </button>
+        </nav>
+      </section>
+      <div class="details-wrapper">
 
-  You’ve used 815 GB of your storage
+        <div class="details-remaining">
+          <span>18 MB</span> Left
+        </div>
+        <section class="details-container">
+          <p>You’ve used <b>0</b> MB  of your storage</p>
+          <div class="range-indicator-container">
+            <div class="range-indicator">
+              <div class="range-point" >
+            </div>
+          </div>
+          <div class="details-range">
+            <span>0 MB</span>
+            <span>18 MB</span>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
   
 </body>
+<script src="./app.js"></script>
 </html>
